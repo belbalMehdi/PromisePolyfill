@@ -1,4 +1,5 @@
 (function(){
+  if(window.Promise) return null;
   if(!document.addEventListener) document.addEventListener = document.attachEvent;
   var Promise = function(fct){
   this.resolveCode = "resolve"+Math.random();
